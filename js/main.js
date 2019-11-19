@@ -297,11 +297,11 @@ function animationThree(){
 }
 
 // animation
-setInterval (animateCircles, 7000);
+setInterval (animateCircles, 6000);
 
 function animateCircles(){
     animationOne();
-    setTimeout(function() { animationTwo() }, 3500);
-    setTimeout(function() { animationThree() }, 3500);
+    setTimeout(function() { animationTwo() }, 2000);
+    setTimeout(function() { animationThree() }, 4000);
 }
 
