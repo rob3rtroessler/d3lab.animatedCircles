@@ -297,11 +297,21 @@ function animationThree(){
 }
 
 // animation
-setInterval (animateCircles, 6000);
+let returnedId;
+
+function startAnimation(){
+    returnedId = setInterval (animateCircles, 3000);
+    console.log(returnedId);
+}
+
+function stopAnimation(){
+    console.log(returnedId);
+    clearInterval(returnedId);
+}
 
 function animateCircles(){
     animationOne();
-    setTimeout(function() { animationTwo() }, 2000);
-    setTimeout(function() { animationThree() }, 4000);
+    setTimeout(function() { animationTwo() }, 1000);
+    setTimeout(function() { animationThree() }, 2000);
 }
 
